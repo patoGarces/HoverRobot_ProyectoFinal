@@ -87,6 +87,12 @@ Autor
 
 Este proyecto fue realizado por [Nombre del estudiante o grupo] como parte de la carrera de Ingeniería Mecatrónica en la Facultad de Ingeniería de la Universidad Nacional de Lomas de Zamora.
 
+
+
+
+
+
+
 Carpetas del Proyecto
 
 A continuación se detallan las carpetas que estructuran este repositorio:
@@ -100,12 +106,3 @@ PLANOS: Esquemáticos y diagramas de los sistemas implementados.
 DATASHEET: Hojas de datos y especificaciones de los componentes utilizados.
 
 INFORMES: Archivos relacionados con la planificación y documentación del proyecto, como Gantt, informes en PDF, cronogramas, manuales, etc.
-
-
-
-IMPORTANTE, LAS SIGUIENTES CARPETAS DEBERÁN ESTAR PRESENTE EN SU REPOSITORIO:
-CODIGO
-MULTIMEDIA (IMAGÉNES Y VIDEOS)
-PLANOS
-DATASHEET
-INFORMES (GANTT, INFORME PDF, CRONOGRAMAS, MANUALES)
