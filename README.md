@@ -79,7 +79,7 @@ El enfoque del proyecto es explorar el control dinámico de robots de balanceo y
 
 ## Fotos / Videos
 
-📌 Pendiente de agregar. 
+En carpeta 'Multimedia'
 
 ---
 
