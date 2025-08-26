@@ -5,7 +5,7 @@ Introducción / Objetivo
 
 En la Universidad Nacional de Lomas de Zamora, nuestra Facultad de Ingeniería se dedica a la formación de profesionales en diversas ramas de la ingeniería. Este repositorio corresponde al proyecto de [tu área o especialidad], desarrollado como parte del curso de [nombre del curso] de la carrera de Ingeniería Mecatrónica.
 
-El objetivo de este proyecto es [descripción breve del objetivo del proyecto, lo que se busca lograr y/o los problemas que se están resolviendo].
+El objetivo de este proyecto es diseñar y construir un robot de balanceo autónomo reutilizando la estructura y controladora de un hoverboard, reprogramada y controlada por una placa ESP32, incorporando un sistema de visión artificial y una aplicación móvil para control manual
 
 Índice
 
@@ -25,84 +25,84 @@ Autor
 
 Descripción
 
-Este proyecto se basa en [explicación detallada del proyecto, su propósito, y los objetivos específicos]. A continuación, se explica cómo se aborda el problema o tema desde una perspectiva técnica y cómo los diferentes componentes interactúan para lograr el funcionamiento del sistema.
+Este proyecto se basa en la implementación de un robot de balanceo tipo self-balancing utilizando la base de un hoverboard, controlado por una placa ESP32 custom.
+El sistema integra un sensor inercial MPU6050 para el control de estabilidad, motores brushless gestionados mediante la controladora original del hoverboard reprogramada, y un módulo de visión artificial basado en una cámara estéreo PS5 y Raspberry Pi 5.
+
+Se complementa con:
+
+Una aplicación móvil (Kotlin) para control manual del robot.
+
+Un módulo en ROS 2 (Python + OpenCV) para navegación autónoma y procesamiento de visión.
+
+Comunicación mediante sockets TCP entre los diferentes sistemas.
+
+El enfoque del proyecto es explorar el control dinámico de robots de balanceo y su integración con sistemas de visión y navegación autónoma.
 
 Instrucciones de Uso
 
-Para utilizar este proyecto, sigue estos pasos:
+Para utilizar este proyecto, sigue los pasos:
 
-Paso 1: Descripción del primer paso para poner en marcha el proyecto.
+Paso 1. Clonar este repositorio general y los repositorios relacionados.
 
-Paso 2: Descripción del segundo paso, etc.
+Paso 2. Montar el hardware de acuerdo a los planos en la carpeta PLANOS.
 
-Paso X: Cualquier otro paso relevante que se deba seguir.
+Paso 3. Cargar el firmware del ESP32 desde el repositorio Mainboard.
 
-Asegúrate de tener las herramientas y componentes necesarios descritos más adelante.
+Paso 4. Instalar y ejecutar la aplicación móvil desde HoverRobotApp.
+
+Paso 5. Ejecutar el stack de navegación en ROS 2 desde HoverRobotNavigation.
+
+Paso 6. Realizar pruebas en entorno controlado y luego en entornos reales.
+
 
 Tecnologías Utilizadas
 
-Este proyecto fue desarrollado utilizando una variedad de tecnologías, incluyendo:
+Robótica / Control: ESP32, motores brushless, controladora de hoverboard.
 
-Robótica: [Arduino, Raspberry Pi, servomotores, motores paso a paso, etc.]
+Electrónica: MPU6050, cámara estéreo PS5, placa ESP32 custom.
 
-Electrónica: [Sensores, actuadores, circuitos electrónicos, controladores, etc.]
+Programación: C, Python, Kotlin.
 
-Programación: [Python, C++, JavaScript, MATLAB, etc.]
+Plataformas: ROS 2, OpenCV, Raspberry Pi 5.
 
-Plataformas: [ROS (Robot Operating System), OpenCV, TensorFlow, etc.]
+Comunicación: Sockets TCP.
 
-Inteligencia Artificial: [Redes neuronales, visión computacional, algoritmos de machine learning, etc.]
+Visión / IA: Procesamiento de imágenes, navegación autónoma.
 
 Listado de Componentes
 
-Componente 1: Descripción del componente 1 (por ejemplo, "Motor paso a paso").
+Placa ESP32 custom – microcontrolador principal.
 
-Componente 2: Descripción del componente 2 (por ejemplo, "Placa Arduino").
+IMU MPU6050 – medición de aceleración y giroscopio para balanceo.
 
-Componente 3: Descripción del componente 3, etc.
+Motores brushless – tracción principal, controlados mediante la controladora original del hoverboard.
+
+Cámara estéreo PS5 – captura del entorno para visión artificial.
+
+Raspberry Pi 5 – procesamiento de visión y ejecución de ROS 2.
 
 Esquemáticos
 
 A continuación se presentan los esquemáticos y diagramas de diseño que explican cómo se ensamblan y operan los sistemas del proyecto:
 
-Esquemático 1: [Nombre del esquemático o diagrama].
-
-Esquemático 2: [Nombre del siguiente esquemático], etc.
-
-(En esta sección puedes subir imágenes o enlaces a los archivos relevantes en la carpeta "PLANOS".)
+- PENDIENTE - 
 
 Fotos / Videos
 
-Aquí puedes visualizar imágenes y videos que muestran el proceso de desarrollo y la implementación final del proyecto:
-
-Foto 1: [Descripción de la foto o el momento mostrado].
-
-Foto 2: [Descripción de otra imagen importante], etc.
-
-(Video 1 - [Descripción breve del video])
+- PENDIENTE -
 
 [Enlaces a las imágenes o videos almacenados en la carpeta "MULTIMEDIA"]
 
 Autor
 
-Este proyecto fue realizado por [Nombre del estudiante o grupo] como parte de la carrera de Ingeniería Mecatrónica en la Facultad de Ingeniería de la Universidad Nacional de Lomas de Zamora.
+Este proyecto fue realizado por Patricio Garcés como parte de la carrera de Ingeniería Mecatrónica en la Facultad de Ingeniería de la Universidad Nacional de Lomas de Zamora.
 
 
 
+Repositorios relacionados
 
+Mainboard (ESP32): HoverRobot-ESP32
 
+Aplicación móvil (Kotlin): HoverRobotApp-balancing-robot
 
-
-Carpetas del Proyecto
-
-A continuación se detallan las carpetas que estructuran este repositorio:
-
-CODIGO: Contiene el código fuente utilizado en este proyecto.
-
-MULTIMEDIA: Imágenes y videos del desarrollo y funcionamiento del proyecto.
-
-PLANOS: Esquemáticos y diagramas de los sistemas implementados.
-
-DATASHEET: Hojas de datos y especificaciones de los componentes utilizados.
-
-INFORMES: Archivos relacionados con la planificación y documentación del proyecto, como Gantt, informes en PDF, cronogramas, manuales, etc.
+Navegación en ROS 2: HoverRobotNavigation
